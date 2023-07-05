@@ -1,4 +1,4 @@
-from mediaSecure.encodeB64 import EncodingOptions
+from mediaSecure.encodeB64 import EncodingOptions, MediaSecureError
 import os
 
 # Example usage:
@@ -29,7 +29,7 @@ if __name__ == "__main__":
         try:
             instance.decode_mediaFile(encoded_image["encoded_data"], output_file_path)
             print("Decoding successful. Image saved as", output_file_path)
-        except Exception as e:
+        except MediaSecureError as e:
             print("Decoding failed. Error:", str(e))
 
     # Example 3: Decoding the image and returning it as bytes
