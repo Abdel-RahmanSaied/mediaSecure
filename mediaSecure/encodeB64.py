@@ -21,7 +21,7 @@ class EncodingOptions:
                 mediaFile_data = mediaFile.read()
                 encoded_data = base64.b64encode(mediaFile_data)
                 data = {"state": "Success", "encoded_data": encoded_data, "file_ext": file_ext}
-                return encoded_data
+                return data
 
         except Exception as e:
             raise MediaSecureError(f"Encoding failed: {str(e)}")
