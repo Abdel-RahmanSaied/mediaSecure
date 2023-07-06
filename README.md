@@ -1,1 +1,34 @@
-# mediaSecure
+# Project Description: MediaEncryptor
+
+MediaEncryptor is a Python library that provides a simple and secure way to encrypt and decrypt media files. It offers functionality to encode media files using Base64 encoding and decode them back to their original format. This library can be used to protect sensitive media content or add an additional layer of security during transmission or storage.
+
+Key Features:
+- Media file encryption: MediaEncryptor allows users to encode media files using Base64 encoding, making it easier to handle and transmit encrypted media data.
+- File format preservation: The library ensures that the original file format is preserved during the encryption and decryption process.
+- Encryption error handling: MediaEncryptor handles various error scenarios during the encryption and decryption process, providing informative error messages and custom exceptions.
+- Ease of integration: With a simple and intuitive interface, MediaEncryptor can be easily integrated into existing projects, making it a valuable addition to any media encryption workflow.
+
+Usage:
+1. Encoding media files:
+   - Initialize an instance of the EncodingOptions class.
+   - Call the `encode_mediaFile` method, providing the path to the media file as an argument.
+   - The method returns a dictionary containing the encoded data, the original file extension, and a success state.
+
+2. Decoding media files:
+   - Initialize an instance of the EncodingOptions class.
+   - Call the `decode_mediaFile` method, providing the encoded data and the output file path as arguments.
+   - The method decodes the media file and saves it at the specified output file path.
+
+3. Decoding media files to bytes:
+   - Initialize an instance of the EncodingOptions class.
+   - Call the `decode_mediaFile_toBytes` method, providing the encoded data as an argument.
+   - The method decodes the media file and returns the decoded data as bytes.
+
+Contributions:
+MediaEncryptor welcomes contributions from the open-source community. If you'd like to contribute, please follow the guidelines in the project's GitHub repository.
+
+License:
+MediaEncryptor is licensed under the MIT License. You can find the full license text in the LICENSE file.
+
+Contact:
+For any inquiries or support related to MediaEncryptor, please contact the project maintainer at abdelrahmansaied080@gmail.com
