@@ -2,7 +2,7 @@ import os
 import base64
 import tempfile
 import pytest
-from mediaSecure.encodeB64 import EncodingOptions, MediaSecureError
+from ..mediaSecure.encodeB64 import EncodingOptions, MediaSecureError
 
 # export PYTHONPATH="/mnt/WorkDisk/@projects:$PYTHONPATH"
 
