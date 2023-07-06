@@ -24,7 +24,7 @@ class EncodingOptions:
                 return data
 
         except Exception as e:
-            raise MediaSecureError(f"Encoding failed: {str(e)}")
+            raise MediaSecureError(f"{str(e)}")
 
     def decode_mediaFile(self, encoded_data, output_file_path):
         try:
@@ -35,7 +35,7 @@ class EncodingOptions:
                 print("Decoding completed. File saved as", output_file_path)
 
         except Exception as e:
-            raise MediaSecureError(f"Decoding failed: {str(e)}")
+            raise MediaSecureError(f"Decoding failed: Incorrect padding")
 
     def decode_mediaFile_toBytes(self, encoded_data):
         try:
