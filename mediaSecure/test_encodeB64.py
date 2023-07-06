@@ -3,12 +3,13 @@ import base64
 import tempfile
 import pytest
 
-# export PYTHONPATH="/mnt/WorkDisk/@projects:$PYTHONPATH"
-project_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-os.environ["PYTHONPATH"] = project_path
-# print(os.environ.get("PYTHONPATH", "none"))
+from .encodeB64 import EncodingOptions, MediaSecureError
 
-from mediaSecure.encodeB64 import EncodingOptions, MediaSecureError
+# # export PYTHONPATH="/mnt/WorkDisk/@projects:$PYTHONPATH"
+# project_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
+# os.environ["PYTHONPATH"] = project_path
+# # print(os.environ.get("PYTHONPATH", "none"))
+
 
 @pytest.fixture
 def encoding_options():
