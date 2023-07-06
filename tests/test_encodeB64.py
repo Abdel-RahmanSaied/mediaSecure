@@ -4,6 +4,7 @@ import tempfile
 import pytest
 from mediaSecure.encodeB64 import EncodingOptions, MediaSecureError
 
+# export PYTHONPATH="/mnt/WorkDisk/@projects:$PYTHONPATH"
 
 @pytest.fixture
 def encoding_options():
