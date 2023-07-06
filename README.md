@@ -31,4 +31,8 @@ License:
 MediaEncryptor is licensed under the MIT License. You can find the full license text in the LICENSE file.
 
 Contact:
-For any inquiries or support related to MediaEncryptor, please contact the project maintainer at abdelrahmansaied080@gmail.com
+For any inquiries or support related to MediaEncryptor, please contact the project maintainer at [abdelrahmansaied080@gmail.com]
+
+## Authors
+
+- [@Abdel-Rahman Saied](https://github.com/Abdel-RahmanSaied)
